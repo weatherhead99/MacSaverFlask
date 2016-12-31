@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NewHome</title>
-    <link rel="stylesheet" href="/static/addmac/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
-    <link rel="stylesheet" href="/static/addmac/css/Features-Boxed.css">
-    <link rel="stylesheet" href="/static/addmac/css/Pretty-Header.css">
-    <link rel="stylesheet" href="/static/addmac/css/Registration-Form-with-Photo.css">
-    <link rel="stylesheet" href="/static/addmac/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Features-Boxed.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Header.css">
+    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
@@ -21,18 +21,20 @@
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav links">
-                    <li role="presentation"><a href="/">Overview </a></li>
+                    <li role="presentation"><a href="#">Overview </a></li>
                     <li role="presentation"><a href="#">Manage </a></li>
-                    <li role="presentation"><a href="#">Add</a></li>
+                    <li role="presentation"><a href="#"> Reports</a></li>
                     <li role="presentation">
                         <a href="#" class="custom-navbar"> </a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#"> <span class="caret"></span><img src="/static/addmac/img/images.png" class="dropdown-image"></a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#"> <span class="caret"></span><img src="assets/img/images.png" class="dropdown-image"></a>
                         <ul class="dropdown-menu dropdown-menu-right" role="menu">
-                            <li role="presentation" class="active"><a href="/logout">Logout</a></li>
+                            <li role="presentation"><a href="#">Settings </a></li>
+                            <li role="presentation"><a href="#">Payments </a></li>
+                            <li role="presentation" class="active"><a href="#">Logout </a></li>
                         </ul>
                     </li>
                 </ul>
@@ -42,6 +44,7 @@
     <div class="features-boxed"></div>
     <div class="register-photo">
         <div class="form-container">
+            <div class="image-holder"></div>
             <form method="post">
                 <h2 class="text-center">Add MAC Address</h2>
                 <div class="form-group">
@@ -63,8 +66,8 @@
             </form>
         </div>
     </div>
-    <script src="/static/addmac/js/jquery.min.js"></script>
-    <script src="/static/addmac/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
