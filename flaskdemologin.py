@@ -2,6 +2,8 @@ from flask import *
 from functools import *
 import data
 
+import arpreq
+
 app = Flask(__name__)
 app.secret_key = data.secret_key
 
@@ -36,7 +38,10 @@ def add_mac():
         print(name)
         print(mac)
         return redirect(url_for('home'))
-    return render_template('addmac.html')
+        
+    #get MAC address via ARP table query - NOTE currently will fail for loopback addresses
+    MAC_address_autofill = arpreq.arpreq(request.remote_addr)
+    return render_template('addmac.html',MAC_address_autofill=MAC_address_autofill)
 
 
 @app.route('/login', methods=['GET', 'POST'])
